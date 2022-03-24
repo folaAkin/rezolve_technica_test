@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --headed"
+    "test": "cypress run --headed",
+    "cy:report":"node cucumber-html-report.js"
   },
   "keywords": [],
   "author": "Akin",
@@ -14,9 +15,16 @@
     "cypress-cucumber-preprocessor": "^4.3.1",
     "mocha": "^5.2.0",
     "mochawesome": "^7.1.0",
+    "multiple-cucumber-html-reporter": "^1.19.0",
     "prettier": "2.5.1"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }

@@ -14,3 +14,11 @@ jobs:
         run: npm install
       - name: Cypress run
         uses: cypress-io/github-action@v2
+     -  name: Generate report
+        run: npm run cy:report
+     -  name: Upload report
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-cucumber-report
+          path: rezolve-automation-exercise/reports/cucumber-htmlreport.html/index.html/
+
