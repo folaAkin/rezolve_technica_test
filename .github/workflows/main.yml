@@ -1,10 +1,10 @@
-name:Cypress Cucumber Tests
+name: Cypress Tests
 
 on: [push]
 
 jobs:
   cypress-run:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
