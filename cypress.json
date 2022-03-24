@@ -18,5 +18,6 @@
   "defaultCommandTimeout": 5000,
   "screenshotOnRunFailure": true,
   "screenshotsFolder": "TestReport/assets",
-  "video": true
+  "video": true,
+  "projectId": "aciqpk"
 }
