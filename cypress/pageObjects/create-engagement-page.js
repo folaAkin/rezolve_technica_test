@@ -5,6 +5,7 @@ class CreateEngagementPage {
 
   clickOnSignInLink() {
     cy.get(this.signInLink).click({ force: true });
+    //added comments to sign in
   }
 
   getCreateEngagementText() {
