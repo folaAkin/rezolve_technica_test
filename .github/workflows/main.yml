@@ -1,5 +1,6 @@
 name: Cypress Test
-on: [push]
+'on':
+  - push
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
@@ -9,16 +10,16 @@ jobs:
       - name: Install node
         uses: actions/setup-node@v2
         with:
-          node:version: '14'
+          'node:version': '14'
       - name: Install dependencies
         run: npm install
       - name: Cypress run
         uses: cypress-io/github-action@v2
-     -  name: Generate report
-        run: npm run cy:report
-     -  name: Upload report
+      - name: Generate report
+        run: 'npm run cy:report'
+      - name: Upload report
         uses: actions/upload-artifact@v2
         with:
           name: cypress-cucumber-report
-          path: rezolve-automation-exercise/reports/cucumber-htmlreport.html/index.html/
-
+          path: >-
+            rezolve-automation-exercise/reports/cucumber-htmlreport.html/index.html/
