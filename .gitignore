@@ -1,0 +1,10 @@
+node_modules
+cypress/videos
+cypress/screenshots
+cypress/reports
+TestReport
+npm-debug.log
+.idea/
+.DS_Store
+/.DS_Store
+cypress/cucumber-json

@@ -1,0 +1,22 @@
+{
+  "baseUrl": "https://importtest05.rce.dev.eu.rezolve.com/",
+  "userEmail": "admin",
+  "userPassword": "admin123!",
+  "apiUrl": "https://RCEHOST/index.php/rezolve_admin/admin/",
+  "experimentalSessionSupport": true,
+
+
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "charts": true,
+    "reportPageTitle": "My Test Suite",
+    "embeddedScreenshots": true,
+    "inlineAssets": true
+  },
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 5000,
+  "screenshotOnRunFailure": true,
+  "screenshotsFolder": "TestReport/assets",
+  "video": true
+}

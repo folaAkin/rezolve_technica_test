@@ -1,0 +1,304 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 9,
+    "passes": 7,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-03-02T02:35:13.234Z",
+    "end": "2022-03-02T02:35:41.834Z",
+    "duration": 27157,
+    "testsRegistered": 9,
+    "passPercent": 77.77777777777777,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2bf49e04-ab71-4ff4-8f26-06445d5006a2",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2fe460e5-d053-462c-9fda-239357bd3969",
+          "title": "Create a Link Trigger",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Select Link Trigger ",
+              "fullTitle": "Create a Link Trigger Select Link Trigger ",
+              "timedOut": null,
+              "duration": 11369,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_createEngagementPage.createEngagementPage.selectTrigger(\"Link\");",
+              "err": {},
+              "uuid": "ef47f901-65fd-403e-b576-daa9f4908172",
+              "parentUUID": "2fe460e5-d053-462c-9fda-239357bd3969",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that user is on link trigger page",
+              "fullTitle": "Create a Link Trigger Verify that user is on link trigger page",
+              "timedOut": null,
+              "duration": 77,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should(\"include\", \"/link-trigger\");",
+              "err": {},
+              "uuid": "80564354-4e47-4002-b78b-85c148327c05",
+              "parentUUID": "2fe460e5-d053-462c-9fda-239357bd3969",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Choose a Target Page",
+              "fullTitle": "Create a Link Trigger Choose a Target Page",
+              "timedOut": null,
+              "duration": 154,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_linkTriggerPage.linkTriggerPage.chooseTargetPage();",
+              "err": {},
+              "uuid": "ae1ce4b3-7270-4074-9025-e901433e38ec",
+              "parentUUID": "2fe460e5-d053-462c-9fda-239357bd3969",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create a new Target Page",
+              "fullTitle": "Create a Link Trigger Create a new Target Page",
+              "timedOut": null,
+              "duration": 1748,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should(\"include\", \"/targets\");\n_targetsPage.targetsPage.getNewTargetPageText().contains(\"Create a new Target Page\");\n_targetsPage.targetsPage.clickOnUrl();\n_urlTargetPage.urlTargetPage.enterNotificationTitle(data.notificationTitle + _util.util.generateRandomString(4));\n_urlTargetPage.urlTargetPage.enterNotificationSubTitle(data.notificationSubTitle + _util.util.generateRandomString(4));\n_urlTargetPage.urlTargetPage.enterTargetURL(data.targetUrl + _util.util.generateRandomString(4) + \".com\");",
+              "err": {},
+              "uuid": "a829faab-9f79-4ae8-b3a8-f2d7b990d3eb",
+              "parentUUID": "2fe460e5-d053-462c-9fda-239357bd3969",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirm and publish trigger",
+              "fullTitle": "Create a Link Trigger Confirm and publish trigger",
+              "timedOut": null,
+              "duration": 187,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_urlTargetPage.urlTargetPage.conFirmAndPublishTargetUrl();",
+              "err": {},
+              "uuid": "8e1cdf9f-840a-49f1-bd60-6d101fa6874a",
+              "parentUUID": "2fe460e5-d053-462c-9fda-239357bd3969",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that user is on checkout page",
+              "fullTitle": "Create a Link Trigger Verify that user is on checkout page",
+              "timedOut": null,
+              "duration": 127,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should(\"include\", \"/checkout\");",
+              "err": {},
+              "uuid": "cbf53def-a4bf-4888-b21c-2709b5b8df20",
+              "parentUUID": "2fe460e5-d053-462c-9fda-239357bd3969",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Enter engagement name and create engagement",
+              "fullTitle": "Create a Link Trigger Enter engagement name and create engagement",
+              "timedOut": null,
+              "duration": 640,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_checkoutPage.checkoutPage.enterEngagementName(data.engagementName + _util.util.generateRandomString(4));\n_checkoutPage.checkoutPage.clickOnCreateEngagementButton();",
+              "err": {},
+              "uuid": "cab53dcb-9ff7-47bd-8302-9b027d810e1f",
+              "parentUUID": "2fe460e5-d053-462c-9fda-239357bd3969",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify that  user is on my Dashboard and engagement is created",
+              "fullTitle": "Create a Link Trigger Verify that  user is on my Dashboard and engagement is created",
+              "timedOut": null,
+              "duration": 6476,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"/Users/akinakinboye/Desktop/rezolve-automation-exercise/TestReport/assets/specs/link-trigger.spec.js/Create a Link Trigger -- Verify that  user is on my Dashboard and engagement is created (failed).png\"",
+              "code": "cy.url().should(\"include\", \"/dashboard\");\n_dashboardPage.dashboardPage.getDashboardHeaderTitle().contains(\"single\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 5000ms: Expected to find content: 'single' within the element: <span> but never did.",
+                "estack": "AssertionError: Timed out retrying after 5000ms: Expected to find content: 'single' within the element: <span> but never did.\n    at Context.eval (https://create.rezolve.com/__cypress/tests?p=cypress/integration/specs/link-trigger.spec.js:251:60)",
+                "diff": null
+              },
+              "uuid": "aae2c8d7-0c33-464d-8882-4ea4ab66efcb",
+              "parentUUID": "2fe460e5-d053-462c-9fda-239357bd3969",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ef47f901-65fd-403e-b576-daa9f4908172",
+            "80564354-4e47-4002-b78b-85c148327c05",
+            "ae1ce4b3-7270-4074-9025-e901433e38ec",
+            "a829faab-9f79-4ae8-b3a8-f2d7b990d3eb",
+            "8e1cdf9f-840a-49f1-bd60-6d101fa6874a",
+            "cbf53def-a4bf-4888-b21c-2709b5b8df20",
+            "cab53dcb-9ff7-47bd-8302-9b027d810e1f"
+          ],
+          "failures": [
+            "aae2c8d7-0c33-464d-8882-4ea4ab66efcb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20778,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "43da8796-e394-4357-982d-f3af975532cc",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2afbb244-e95f-4431-9ddf-a981e9b188dd",
+          "title": "Location Trigger",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open location trigger",
+              "fullTitle": "Location Trigger Open location trigger",
+              "timedOut": null,
+              "duration": 6379,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"/Users/akinakinboye/Desktop/rezolve-automation-exercise/TestReport/assets/specs/location-trigger.spec.js/Location Trigger -- Open location trigger (failed).png\"",
+              "code": "//createEngagementPage.selectTrigger(\"Location\");\ncy.get(\"[data-test='sign-in']\").should(\"not.be.visible\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 5000ms: expected '<a.sign-in>' not to be 'visible'",
+                "estack": "AssertionError: Timed out retrying after 5000ms: expected '<a.sign-in>' not to be 'visible'\n    at Context.eval (https://create.rezolve.com/__cypress/tests?p=cypress/integration/specs/location-trigger.spec.js:172:37)",
+                "diff": null
+              },
+              "uuid": "2aa5461a-ac80-46da-abf2-2208a8aaf702",
+              "parentUUID": "2afbb244-e95f-4431-9ddf-a981e9b188dd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2aa5461a-ac80-46da-abf2-2208a8aaf702"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6379,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.0"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.1.0"
+    }
+  }
+}
