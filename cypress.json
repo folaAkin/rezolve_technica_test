@@ -1,9 +1,9 @@
 {
-  "baseUrl": "https://importtest05.rce.dev.eu.rezolve.com/",
+  "baseUrl": "https://create.rezolve.com/engagement-creation",
   "userEmail": "admin",
   "userPassword": "admin123!",
   "apiUrl": "https://RCEHOST/index.php/rezolve_admin/admin/",
-  "experimentalSessionSupport": true,
+  "experimentalSessionSupport": false,
 
 
   "reporter": "mochawesome",
@@ -20,4 +20,5 @@
   "screenshotsFolder": "TestReport/assets",
   "video": true,
   "projectId": "aciqpk"
+
 }
