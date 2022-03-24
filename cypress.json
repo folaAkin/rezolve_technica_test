@@ -4,8 +4,7 @@
   "userPassword": "admin123!",
   "apiUrl": "https://RCEHOST/index.php/rezolve_admin/admin/",
   "experimentalSessionSupport": false,
-
-
+  "testFiles": "**/*.feature",
   "reporter": "mochawesome",
   "reporterOptions": {
     "reportDir": "cypress/reports",
